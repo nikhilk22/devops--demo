@@ -6,6 +6,7 @@ pipeline {
         stage('Clone') {
             steps {
                  git branch: 'main', url: 'https://github.com/nikhilk22/devops-demo.git'
+				 credentialsId: 'github-id-tiko'
             }
         }
         stage('Build Docker Image') {
