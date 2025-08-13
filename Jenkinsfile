@@ -1,5 +1,5 @@
 
-pieline {
+pipeline {
     agent any
 
     stages {
