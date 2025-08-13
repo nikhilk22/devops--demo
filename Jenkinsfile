@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                 git branch: 'main', url: 'https://github.com/nikhilk22/devops-demo.git'
+                 git branch: 'main', 
+				 url: 'https://github.com/nikhilk22/devops-demo.git',
 				 credentialsId: 'github-id-tiko'
             }
         }
